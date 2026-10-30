@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Room Reservation</title>
+</head>
+
+<body>
+
+    <h2>Room Reservation System</h2>
+
+    <form action="ReservationServlet" method="post">
+
+        Name:
+        <input type="text"
+               name="username"
+               required>
+
+        <br><br>
+
+        Contact:
+        <input type="text"
+               name="contact"
+               required>
+
+        <br><br>
+
+        Room Type:
+
+        <select name="roomType" required>
+
+            <option value="">-- Select Room Type --</option>
+
+            <option value="Single">Single</option>
+
+            <option value="Double">Double</option>
+
+            <option value="Deluxe">Deluxe</option>
+
+        </select>
+
+        <br><br>
+
+        <input type="submit"
+               value="Book Room">
+
+    </form>
+
+</body>
+
+</html>

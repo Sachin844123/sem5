@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+    <h2>Currency Converter using EJB</h2>
+
+    <form action="CurrencyServlet" method="post">
+
+        Amount:
+        <input type="number"
+               name="amount"
+               step="0.01"
+               required>
+
+        <br><br>
+
+        From:
+
+        <select name="from">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+
+        <br><br>
+
+        To:
+
+        <select name="to">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Convert">
+
+    </form>
+
+</body>
+</html>

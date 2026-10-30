@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Example</title>
+</head>
+<body>
+
+    <h2>Session Management</h2>
+
+    <form action="SessionServlet" method="get">
+
+        <input type="submit" value="Visit Page">
+
+    </form>
+
+    <br>
+
+    <form action="SessionServlet" method="post">
+
+        <input type="hidden" name="action" value="destroy">
+
+        <input type="submit" value="Destroy Session">
+
+    </form>
+
+</body>
+</html>
