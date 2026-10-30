@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Reservation</title>
+</head>
+<body>
+    <h2>Room Reservation System</h2>
+    <form action="result.jsp" method="post">
+        Guest Name: <input type="text" name="name" required><br><br>
+        Room Type:
+        <select name="room">
+            <option value="Single">Single - Rs. 1000/day</option>
+            <option value="Double">Double - Rs. 1800/day</option>
+            <option value="Deluxe">Deluxe - Rs. 2500/day</option>
+        </select><br><br>
+        Check-in Date: <input type="date" name="checkin" required><br><br>
+        Number of Guests: <input type="number" name="guests" min="1" required><br><br>
+        Number of Days: <input type="number" name="days" min="1" required><br><br>
+        <input type="submit" value="Reserve Room">
+    </form>
+</body>
+</html>
